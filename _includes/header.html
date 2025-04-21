@@ -1,14 +1,60 @@
-<nav class="fixed top-0 w-full backdrop-blur z-10 transition-colors duration-500">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="{{ '/' | relative_url }}" class="hover:text-gray-300 transition-colors">
-      {{ site.title | default: "My Jekyll Site" }}
+<nav class="fixed top-0 h-24 w-full backdrop-blur z-10 transition-colors duration-500">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center h-full border-b border-gray-700/50">
+    <a href="{{ '/' | relative_url }}" class="hover:text-gray-300 transition-colors text-xl tracking-[1rem]">
+      {{ site.title }}
     </a>
-    <div class="flex items-center space-x-6">
-      <ul class="flex space-x-6">
-        <li><a href="{{ '/' | relative_url }}" class="hover:text-gray-300 transition-colors">Home</a></li>
-        <li><a href="{{ '/about/' | relative_url }}" class="hover:text-gray-300 transition-colors">About</a></li>
-        <li><a href="{{ '/blog/' | relative_url }}" class="hover:text-gray-300 transition-colors">Blog</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}" class="hover:text-gray-300 transition-colors">Contact</a></li>
+    <div class="flex items-center space-x-6 h-full w-1/4">
+      <ul class="flex space-x-6 h-full items-center justify-between w-full">
+        <li>
+          <a href="/"
+            class="hover:text-gray-300 hover:bg-blue-900 transition-colors flex items-center p-3 rounded-lg ">
+            <svg class="w-5 h-5 mr-1transition-all duration-700" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/about/' | relative_url }}"
+            class="hover:text-gray-300 hover:bg-blue-900 transition-colors flex items-center p-3 rounded-lg">
+            <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/blog/' | relative_url }}"
+            class="hover:text-gray-300 hover:bg-blue-900 transition-colors flex items-center p-3 rounded-lg">
+            <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/contact/' | relative_url }}"
+            class="hover:text-gray-300 hover:bg-blue-900 transition-colors flex items-center p-3 rounded-lg">
+            <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/project/' | relative_url }}"
+            class="hover:text-gray-300 hover:bg-blue-900 transition-colors flex items-center p-3 rounded-lg">
+            <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </a>
+        </li></svg>
       </ul>
 
     </div>

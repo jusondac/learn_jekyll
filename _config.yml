@@ -31,6 +31,7 @@ github_username:  jekyll
 
 include:
   - _pages
+paginate: 5
 # Build settings
 theme: minima
 plugins:
@@ -41,6 +42,12 @@ defaults:
       path: "_pages"
     values:
       permalink: /:basename:output_ext
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /:categories/:title:output_ext
+      layout: post
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
